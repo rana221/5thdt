@@ -728,3 +728,195 @@
 	width: 0;
 	height: 0;
 }
+
+
+
+/*  own css */
+.right_icon{
+    margin-right: 8px;
+}
+
+.container .own_two.columns {
+    width: 600px;
+}
+
+/* (A) OUTER CONTAINER */
+.hwrap {
+    /* (A1) DIMENSIONS */
+    width: 100%;
+    height: 150px; /* OPTIONAL */
+  
+    /* (A2) COSMETICS */
+
+    
+    overflow: hidden; /* HIDE SCROLLBARS */
+  }
+  
+  /* (B) MIDDLE CONTAINER - FLEX LAYOUT */
+  .hmove {
+    display: flex;
+    position: relative;
+    top: 0; right: 0;
+  }
+  
+  /* (C) SLIDES - FORCE INTO ONE LONG HORIZONTAL ROW */
+  .hslide {
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  /* (D) SLIDE ANIMATION */
+  @keyframes slideh {
+    /* (D0) THE IDEA - USE KEYFRAMES TO SHIFT SLIDES *
+    0% { right: 0; }
+    33% { right: 100%; }
+    66% { right: 200%; }
+    100% { right: 0; }
+   
+    /* (D1) BUT THE ABOVE WILL SHIFT NON-STOP */
+    /* SO WE ADD PAUSES BETWEEN EACH SLIDE */
+    0% { right: 0; }
+    30% { right: 0; }
+    33% { right: 100%; }
+    63% { right: 100%; }
+    66% { right: 200%; }
+    97% { right: 200%; }
+    100% { right: 0; }
+  }
+  .hmove { animation: slideh linear 15s infinite; }
+  .hmove:hover { animation-play-state: paused; }
+
+
+
+
+
+  /* roller effect  */
+
+  .slider{
+  
+    
+    text-align: center;
+    position: relative;
+ 
+  }
+  
+  .caption{
+    line-height: 100px;
+    font-size: 60px;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 0px 5px 5px rgba(0,0,0,.25);
+    margin-left: -300px;
+  }
+  
+  .text-box{
+    display: inline-block;
+    position: relative;
+  }
+  
+  .text-box div{
+    display: inline-block;
+    position: absolute;
+    top: -200px;
+    transform: rotateX(-90deg);
+    opacity: 0;
+    text-shadow: 0px 5px 5px rgba(0,0,0,.25);
+    animation-timing-function: ease;
+  }
+  
+  .text-box div:nth-child(1){
+    animation: rollDown 10s forwards infinite;
+  }
+  
+  .text-box div:nth-child(2){
+    animation: rollDown2 10s forwards infinite;
+  }
+  
+  .text-box div:nth-child(3){
+    animation: rollDown3 10s forwards infinite;
+  }
+  
+  @keyframes rollDown {
+    0%{
+      top: -200px;
+      transform: rotateX(-90deg);
+    }
+    11%{
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    22%{
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    33%{
+      top: 50px;
+      transform: rotateX(30deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rollDown2 {
+    33%{
+      top: -200px;
+      transform: rotateX(-90deg);
+    }
+    44%{
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    55%{
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    66%{
+      top: 50px;
+      transform: rotateX(30deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rollDown3 {
+    66%{
+      top: -200px;
+      transform: rotateX(-90deg);
+    }
+    77%{
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    88%{
+      top: -74px;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    99%{
+      top: 50px;
+      transform: rotateX(30deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideColor{
+    0%{
+      background-color: #387780;
+    }
+    33%{
+      background-color: #3f88c5;
+    }
+    66%{
+      background-color: #588b8b;
+    }
+    100%{
+      background-color: #387780;
+    }
+  }
