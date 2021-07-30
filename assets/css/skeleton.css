@@ -805,7 +805,7 @@
   .caption{
     line-height: 100px;
     font-size: 60px;
-    color: #fff;
+    color: #ccc;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
