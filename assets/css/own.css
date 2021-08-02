@@ -71,7 +71,7 @@
   .caption{
     line-height: 100px;
     font-size: 60px;
-    color: #fff;
+    color: #ccc;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -186,3 +186,40 @@
       background-color: #387780;
     }
   }
+
+
+
+
+
+
+.some{
+  text-align: center;
+}
+
+  #slideset1 {height: 10em; position: relative}
+  #slideset1 > * {visibility: hidden; position: absolute;
+    top: 0; left: 35%; animation: 12s autoplay1 infinite}
+    @keyframes autoplay1 {
+      0% {visibility: visible}
+      33.33% {visibility: hidden}
+    }
+    #slideset1 > *:nth-child(1) {animation-delay: 0s}
+#slideset1 > *:nth-child(2) {animation-delay: 4s}
+#slideset1 > *:nth-child(3) {animation-delay: 8s}
+
+
+
+
+
+
+  
+  .main-heading {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-transform: none;
+    
+}
+.sme_clr{
+  color: #121212;
+}
