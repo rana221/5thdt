@@ -1451,7 +1451,7 @@ a.curent-nav-color {
 }
 
 .black-back {
-	background-color: #000;
+	background-color: #fff;
 }
 
 .light-over {
@@ -1960,7 +1960,7 @@ a.curent-nav-color {
 }
 
 #owl-logos .item img {
-	width: 80px;
+	width: 120px;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
